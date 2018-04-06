@@ -1,0 +1,53 @@
+{
+  "name": "shop_app",
+  "version": "1.0.0",
+  "description": "simple shop application",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack --config webpack.config.js --mode=production",
+    "dev": "node_modules/.bin/webpack --config webpack.config.js --mode=development --watch",
+    "hmr": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --open",
+    "lint": "node node_modules/eslint/bin/eslint.js src/**/**.js"
+  },
+  "keywords": [
+    "shop",
+    "react",
+    "redux"
+  ],
+  "author": "NamiDorama",
+  "license": "ISC",
+  "dependencies": {
+    "file-loader": "^1.1.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-google-maps": "^9.4.5",
+    "url-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "sinon": "^4.4.6",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
